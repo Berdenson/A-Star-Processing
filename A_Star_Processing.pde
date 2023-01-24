@@ -25,7 +25,7 @@ void draw() {
 
 void mouseClicked() {
   System.out.println(mouseX + ", " + mouseY);
-  Point point = new Point(mouseX/(width),mouseY/(height));
+  Point point = new Point(mouseX/100,mouseY/100);
   point.output();
   point.setObstacle();
   
