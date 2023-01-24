@@ -14,7 +14,7 @@ public class Point {
   public void setObstacle() {
     this.obstacle = !this.obstacle;
     if (this.obstacle) {
-      square(x,y,width/10);
+      square(x*100,y*100,width/10);
       System.out.println(x + ", " + y + "!");
     }
   }
