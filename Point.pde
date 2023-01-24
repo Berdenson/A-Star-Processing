@@ -15,7 +15,6 @@ public class Point {
     this.obstacle = !this.obstacle;
     if (this.obstacle) {
       square(x*100,y*100,width/10);
-      System.out.println(x + ", " + y + "!");
     }
   }
   
@@ -33,7 +32,18 @@ public class Point {
 
 public void draw() {
       if (this.obstacle) {
-        fill(0);
-      square(x,y,width/10);
+        fill(125);
+        square(x,y,width/10);
       }
+      
+      if (this.start) {
+        fill(0,255,0);
+        square(x,y,width/10);
+      }
+      
+      if (this.end) {
+        fill(255,0,0);
+        square(x,y,width/10);
+      }
+      
 }}
