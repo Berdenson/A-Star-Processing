@@ -1,14 +1,14 @@
 int x = 10;
 int y = 10;
 
-int[][] grid = new int[x][y];
-
 void setup() {
   size(1000,1000);
+  
+
 }
 
-void draw() {
-  background(0, 255, 255);
+draw() {
+    background(0, 255, 255);
   
   for (int i=0; i<width; i+=width/x) {
  
@@ -25,6 +25,8 @@ void draw() {
 
 void mouseClicked() {
   System.out.println(mouseX + ", " + mouseY);
-  
+  Point point = new Point(mouseX/(width),mouseY/(height));
+  System.out.println(point.output());
+  point.setObstacle();
   
 }
