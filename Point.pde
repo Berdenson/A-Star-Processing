@@ -29,5 +29,5 @@ public class Point {
   
   public void output() {
     System.out.println(x + ", " + y + "; is obstacle: " + obstacle);
-}
+  }
 }
